@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Text(
                   'Silahkan login untuk melanjutkan ke aplikasi Penggemar PSM Makassar.',
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: Theme.of(context).colorScheme.secondary,
                   ),
                 ),
@@ -178,7 +178,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         );
                       },
                       style: TextButton.styleFrom(padding: EdgeInsets.all(0)),
-                      child: Text('Daftar disini'),
+                      child: Text('Daftar disini!'),
                     ),
                   ],
                 ),
