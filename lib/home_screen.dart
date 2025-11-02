@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_02/create_player_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -104,7 +105,14 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CreatePlayerScreen(),
+                      ),
+                    );
+                  },
                   child: Column(
                     children: [
                       Icon(
