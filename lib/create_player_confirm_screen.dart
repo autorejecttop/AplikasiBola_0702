@@ -88,9 +88,10 @@ class CreatePlayerConfirmScreen extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(builder: (context) => HomeScreen()),
+                    (route) => false,
                   );
                 },
                 style: ElevatedButton.styleFrom(
